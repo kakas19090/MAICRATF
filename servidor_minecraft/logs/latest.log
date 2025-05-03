@@ -1,0 +1,198 @@
+[19:42:38] [ServerMain/INFO]: Building unoptimized datafixer
+[19:42:39] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[19:42:40] [ServerMain/INFO]: Loaded 7 recipes
+[19:42:42] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[19:42:42] [Server thread/INFO]: Loading properties
+[19:42:42] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
+[19:42:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:42:42] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:42:42] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[19:42:42] [Server thread/INFO]: Default game type: SURVIVAL
+[19:42:42] [Server thread/INFO]: Generating keypair
+[19:42:42] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:42:42] [Server thread/INFO]: Using epoll channel type
+[19:42:42] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[19:42:42] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[19:42:43] [Server thread/ERROR]: Fatal error trying to convert AuraSkills v2.3.2:dev/aurelium/auraskills/bukkit/AuraSkills.class
+java.lang.IllegalArgumentException: Unsupported class file major version 65
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199) ~[asm-9.3.jar:9.3]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180) ~[asm-9.3.jar:9.3]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166) ~[asm-9.3.jar:9.3]
+	at org.bukkit.craftbukkit.v1_19_R1.util.Commodore.convert(Commodore.java:171) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.craftbukkit.v1_19_R1.util.CraftMagicNumbers.processClass(CraftMagicNumbers.java:403) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:200) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:129) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:124) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:411) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:319) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.loadPlugins(CraftServer.java:423) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[19:42:43] [Server thread/ERROR]: Could not load 'plugins/AuraSkills-2.3.2.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: dev/aurelium/auraskills/bukkit/AuraSkills has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:157) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:411) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:319) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.loadPlugins(CraftServer.java:423) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: dev/aurelium/auraskills/bukkit/AuraSkills has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:223) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:129) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:124) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	... 7 more
+[19:42:43] [Server thread/ERROR]: Could not load 'plugins/Simple Levels 1.5.1.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.20
+	at org.bukkit.craftbukkit.v1_19_R1.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:380) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:149) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:411) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:319) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.loadPlugins(CraftServer.java:423) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[19:42:43] [Server thread/ERROR]: Could not load 'plugins/CombatWeaponryPlus v1.5.7 (1.20).jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.20
+	at org.bukkit.craftbukkit.v1_19_R1.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:380) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:149) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:411) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:319) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.loadPlugins(CraftServer.java:423) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[19:42:43] [Server thread/ERROR]: Could not load 'plugins/AuraMobs-2.1.0.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [AuraSkills]. Please download and install these plugins to run 'AuraMobs'.
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:287) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.loadPlugins(CraftServer.java:423) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[19:42:43] [Server thread/INFO]: [Graves] Loading Graves v4.9
+[19:42:43] [Server thread/INFO]: [Minepacks] Loading Minepacks v2.4.31.7-T20250421160243
+[19:42:43] [Server thread/INFO]: [Minepacks] PCGF-PluginLib not installed. Switching to standalone mode!
+[19:42:43] [Server thread/INFO]: [NBTAPI] Loading NBTAPI v2.15.0
+[19:42:43] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_19_R1! Trying to find NMS support
+[19:42:43] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_19_R1' loaded!
+[19:42:43] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'NBTAPI' to create a bStats instance!
+[19:42:43] [Server thread/INFO]: [BetterRevive] Loading BetterRevive v0.9.1-BETA
+[19:42:43] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:42:43] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:42:43] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:42:43] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:42:43] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:42:43] [Server thread/INFO]: Preparing level "world"
+[19:42:43] [Thread-6/INFO]: [NBTAPI] [NBTAPI] The NBT-API seems to be up-to-date!
+[19:42:44] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[19:42:44] [Server thread/INFO]: Time elapsed: 133 ms
+[19:42:44] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[19:42:44] [Server thread/INFO]: Time elapsed: 69 ms
+[19:42:44] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[19:42:44] [Server thread/INFO]: Time elapsed: 57 ms
+[19:42:44] [Server thread/INFO]: [Graves] Enabling Graves v4.9
+[19:42:44] [Server thread/INFO]: [Graves] Integration: Hooked into MiniMessage.
+[19:42:44] [Server thread/INFO]: [Minepacks] Enabling Minepacks v2.4.31.7-T20250421160243
+[19:42:44] [Server thread/INFO]: [Minepacks] Starting Minepacks in standalone mode!
+[19:42:45] [Server thread/INFO]: [Minepacks] File "/config.yml" extracted successfully!
+[19:42:45] [Server thread/INFO]: [Minepacks] [32mConfig file successfully loaded.[0m
+[19:42:45] [Server thread/INFO]: [Minepacks] File "/lang/en.yml" extracted successfully!
+[19:42:45] [Server thread/INFO]: [Minepacks] [32mLanguage file successfully loaded. Language: english  Author: GeorgH93[0m
+[19:42:45] [Server thread/INFO]: [at.pcgamingfreaks.MinepacksStandalone.libs.com.zaxxer.hikari.HikariDataSource] Minepacks-Connection-Pool - Starting...
+[19:42:45] [Server thread/INFO]: [at.pcgamingfreaks.MinepacksStandalone.libs.com.zaxxer.hikari.HikariDataSource] Minepacks-Connection-Pool - Start completed.
+[19:42:45] [Server thread/INFO]: [Minepacks] File "/lang/items_en.yml" extracted successfully!
+[19:42:45] [Thread-7/INFO]: [Minepacks] Start downloading update: 2.4.32-release
+[19:42:45] [Server thread/INFO]: [Minepacks] [32mItem name language file successfully loaded. Language: english  Author: GeorgH93[0m
+[19:42:45] [Server thread/INFO]: [Minepacks] Loading item translations ...
+[19:42:45] [Server thread/INFO]: [Minepacks] Finished loading item translations for 828 items.
+[19:42:45] [Server thread/INFO]: [Minepacks] [32m Minepacks has been enabled! [33m :) [0m
+[19:42:45] [Server thread/INFO]: [NBTAPI] Enabling NBTAPI v2.15.0
+[19:42:45] [Server thread/INFO]: [NBTAPI] Checking bindings...
+[19:42:45] [Thread-7/INFO]: [Minepacks] Downloading update: 10% of 1.84 MiB
+[19:42:45] [Thread-7/INFO]: [Minepacks] Downloading update: 20% of 1.84 MiB
+[19:42:45] [Thread-7/INFO]: [Minepacks] Downloading update: 30% of 1.84 MiB
+[19:42:45] [Thread-7/INFO]: [Minepacks] Downloading update: 40% of 1.84 MiB
+[19:42:45] [Thread-7/INFO]: [Minepacks] Downloading update: 50% of 1.84 MiB
+[19:42:45] [Server thread/INFO]: [NBTAPI] All Classes were able to link!
+[19:42:45] [Thread-7/INFO]: [Minepacks] Downloading update: 60% of 1.84 MiB
+[19:42:45] [Server thread/INFO]: [NBTAPI] All Methods were able to link!
+[19:42:45] [Server thread/INFO]: [NBTAPI] Running NBT reflection test...
+[19:42:46] [Thread-7/INFO]: [Minepacks] Downloading update: 70% of 1.84 MiB
+[19:42:46] [Thread-7/INFO]: [Minepacks] Downloading update: 80% of 1.84 MiB
+[19:42:46] [Thread-7/INFO]: [Minepacks] Downloading update: 90% of 1.84 MiB
+[19:42:46] [Thread-7/INFO]: [Minepacks] Downloading update: 100% of 1.84 MiB
+[19:42:46] [Thread-7/INFO]: [Minepacks] Finished updating.
+[19:42:46] [Server thread/INFO]: [NBTAPI] Success! This version of NBT-API is compatible with your server.
+[19:42:46] [Server thread/INFO]: [BetterRevive] Enabling BetterRevive v0.9.1-BETA
+[19:42:46] [Server thread/INFO]: [BetterRevive] Inventory title with support for more than 32 characters. Skipping..
+[19:42:46] [Server thread/INFO]: [BetterRevive] Hex colors are available! Ready for RGB..
+[19:42:46] [Server thread/INFO]: [BetterRevive] Old constructor for HoverEvent found! Using it..
+[19:42:46] [Server thread/INFO]: [BetterRevive] New sendTitle method found! Using it..
+[19:42:46] [Server thread/INFO]: [BetterRevive] New setUnbreakable method found! Using it..
+[19:42:46] [Server thread/INFO]: [BetterRevive] New isUnbreakable method found! Using it..
+[19:42:46] [Server thread/INFO]:   ___      _   _           ___         _         
+[19:42:46] [Server thread/INFO]:  | _ ) ___| |_| |_ ___ _ _| _ \_____ _(_)_ _____ 
+[19:42:46] [Server thread/INFO]:  | _ \/ -_)  _|  _/ -_) '_|   / -_) V / \ V / -_)
+[19:42:46] [Server thread/INFO]:  |___/\___|\__|\__\___|_| |_|_\___|\_/|_|\_/\___|
+[19:42:46] [Server thread/INFO]: 
+[19:42:46] [Server thread/INFO]:    Running plugin BetterRevive v0.9.1-BETA (v1_19)
+[19:42:46] [Server thread/INFO]:    Server running Paper version git-Paper-307 (MC: 1.19.2)
+[19:42:46] [Server thread/INFO]:    (Implementing API version git-Paper-307 (MC: 1.19.2))
+[19:42:46] [Server thread/INFO]:    (Developed by  AlonsoAliaga - Thanks for using my plugin ❤)
+[19:42:46] [Server thread/INFO]:    If you loved the plugin consider leaving a review and mentioning your server IP in it!
+[19:42:46] [Server thread/INFO]: 
+[19:42:46] [Server thread/INFO]: ==============================================================================================
+[19:42:46] [Server thread/INFO]: [BetterRevive] This is not a error! This is just a warning to keep in mind if you have issues!
+[19:42:46] [Server thread/INFO]: [BetterRevive] You are using a Paper fork (Paper). This plugin was made for Spigot
+[19:42:46] [Server thread/INFO]: [BetterRevive] but was (in most cases) tested with different builds of Paper and Purpur.
+[19:42:46] [Server thread/INFO]: [BetterRevive] Spigot and forks API are really similar and should be compatible, however there are
+[19:42:46] [Server thread/INFO]: [BetterRevive] some cases in which they aren't compatible. If you have issues report them to the
+[19:42:46] [Server thread/INFO]: [BetterRevive] developer instead of reviewing 1 star. Thanks in advanced!
+[19:42:46] [Server thread/INFO]: [BetterRevive] Join us in our official support server on alonsoaliaga.com/discord
+[19:42:46] [Server thread/INFO]: ==============================================================================================
+[19:42:46] [Server thread/INFO]: 
+[19:42:46] [Server thread/INFO]: [BetterRevive] BungeeCord action bar available. Hooking..
+[19:42:46] [Server thread/INFO]: [BetterRevive] ProtocolLib not found! Skipping..
+[19:42:46] [Server thread/INFO]: [Auto-update] Configuration config.yml is up-to-date!
+[19:42:46] [Server thread/INFO]: [BetterRevive] Factions hook is enabled but couldn't find any supported faction plugin were found. Disabling hook..
+[19:42:46] [Server thread/INFO]: [BetterRevive] Finish off feature has been enabled! Players can finish off other player!
+[19:42:46] [Server thread/INFO]: [BetterRevive] Finish off health: 20 | Finish off damage multiplier: 0.5
+[19:42:46] [Server thread/INFO]: [BetterRevive] DamageCause for finish off is empty! All damage cause will be allowed to finish off players. (Includes DROWING, FIRE, LAVA, etc)
+[19:42:46] [Server thread/INFO]: [BetterRevive] Bleeding mode is 0! Plugin will select the best option for your server!
+[19:42:46] [Server thread/INFO]: [BetterRevive] Server version is v1_19. Players will look like swimming while bleeding! (Mode 2)
+[19:42:46] [Server thread/INFO]: [BetterRevive] Loaded 1 bleeding effects.
+[19:42:46] [Server thread/INFO]: [BetterRevive] Loaded 1 revived effect.
+[19:42:46] [Server thread/INFO]: Running delayed init tasks
+[19:42:46] [Server thread/INFO]: Done (4.557s)! For help, type "help"
+[19:42:46] [Server thread/INFO]: Timings Reset
+[19:42:48] [Craft Scheduler Thread - 2 - BetterRevive/INFO]: [BetterRevive] Checking for updates...
+[19:42:48] [Craft Scheduler Thread - 2 - BetterRevive/INFO]: [BetterRevive] Plugin up-to-date! You have the latest version!
+[19:43:09] [User Authenticator #0/INFO]: UUID of player kimcraft19 is 8bda2004-f0f4-380e-b76e-7dbafef50f41
+[19:43:09] [Server thread/INFO]: kimcraft19 joined the game
+[19:43:09] [Server thread/INFO]: kimcraft19[/127.22.242.80:36659] logged in with entity id 221 at ([world]-128.85833281378916, 71.0, -166.11712424412573)
+[19:43:30] [Server thread/INFO]: kimcraft19 issued server command: /plugins
+[19:44:01] [Server thread/INFO]: kimcraft19 issued server command: /minepacks:backpack
+[19:47:45] [Server thread/INFO]: kimcraft19 has made the advancement [Stone Age]
+[19:51:41] [Server thread/INFO]: kimcraft19 lost connection: Disconnected
+[19:51:41] [Server thread/INFO]: kimcraft19 left the game
